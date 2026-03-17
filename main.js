@@ -1,1 +1,5 @@
-console.log('object');
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+});

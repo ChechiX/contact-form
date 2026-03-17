@@ -19,10 +19,26 @@
     <script defer src="./main.js"></script>
   </head>
   <body>
+    <div class="toast" id="toast">
+      <div class="toast__title">
+        <img
+          src="./assets/images/icon-success-check.svg"
+          alt="Success Check Icon"
+          class="toast__icon"
+        />
+
+        <p class="toast__message">Message Sent!</p>
+      </div>
+
+      <p class="toast__description">
+        Thanks for completing the form. We’ll be in touch soon!
+      </p>
+    </div>
+
     <main class="card">
       <h1 class="card__title">Contact Us</h1>
 
-      <form class="card__form">
+      <form class="card__form" id="contactForm" novalidate>
         <div class="card__field">
           <label for="first-name"
             >First Name <span class="required">*</span></label
@@ -79,7 +95,9 @@
               value="general"
             />
 
-            <label for="general">General Enquiry</label>
+            <label class="card__field-label" for="general"
+              >General Enquiry</label
+            >
           </div>
 
           <div class="card__field-input card__field-input-support">
@@ -90,7 +108,9 @@
               value="support"
             />
 
-            <label for="support">Support Request</label>
+            <label class="card__field-label" for="support"
+              >Support Request</label
+            >
           </div>
         </fieldset>
 
