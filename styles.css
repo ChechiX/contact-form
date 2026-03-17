@@ -54,6 +54,7 @@ body {
   background-color: var(--green-200);
   font-family: 'Karla Regular';
   color: var(--grey-900);
+  line-height: 1.5;
 }
 
 .card {
@@ -65,6 +66,8 @@ body {
 .card__title {
   margin-bottom: 2rem;
   font-family: 'Karla Bold';
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .card__form {
@@ -76,6 +79,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.required {
+  color: var(--green-600);
 }
 
 .card__field-input {
@@ -102,10 +109,24 @@ body {
   gap: 2.5rem;
 }
 
+.card__field-texta {
+  padding: 0.75rem 1.5rem;
+  min-height: 15rem;
+  border: 1px solid var(--grey-500);
+  border-radius: 8px;
+}
+
 .card__field-consent {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.card__field-checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: var(--grey-500);
 }
 
 .card__submit-button {
