@@ -7,6 +7,22 @@
   --red: #d73c3c;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Karla Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/static/Karla-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Karla Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/static/Karla-Bold.woff2') format('woff2');
+}
+
 html {
   box-sizing: border-box;
 }
@@ -19,7 +35,8 @@ html {
 
 body,
 h1,
-p {
+p,
+input[type='radio'] {
   margin: 0;
 }
 
@@ -35,6 +52,8 @@ legend {
 body {
   padding: 2rem 1rem;
   background-color: var(--green-200);
+  font-family: 'Karla Regular';
+  color: var(--grey-900);
 }
 
 .card {
@@ -45,6 +64,7 @@ body {
 
 .card__title {
   margin-bottom: 2rem;
+  font-family: 'Karla Bold';
 }
 
 .card__form {
@@ -58,6 +78,14 @@ body {
   gap: 0.5rem;
 }
 
+.card__field-input {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--grey-500);
+  display: flex;
+  gap: 0.75rem;
+}
+
 .card__contact-method {
   display: flex;
   flex-direction: column;
@@ -66,6 +94,12 @@ body {
 
 .card__contact-method-legend {
   margin-bottom: 1rem;
+}
+
+.card__field-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .card__field-consent {
@@ -80,6 +114,8 @@ body {
   border: none;
   border-radius: 8px;
   color: var(--white);
+  font-size: 1.125rem;
+  font-family: 'Karla Bold';
 }
 
 .attribution {
