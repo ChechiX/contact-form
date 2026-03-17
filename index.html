@@ -1,52 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Contact form</title>
 
-  Contact Us
+    <link rel="stylesheet" href="./styles.css" />
 
-  First Name
-  This field is required
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <main class="card">
+      <h1 class="card__title">Contact Us</h1>
 
-  Last Name
-  This field is required
+      <form class="card__form">
+        <div class="card__field">
+          <label for="first-name">First Name *</label>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+        <div class="card__field">
+          <label for="last-name">Last Name *</label>
 
-  Message
-  This field is required
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+        <div class="card__field">
+          <label for="email">Email Address *</label>
 
-  Submit
+          <input type="email" id="email" name="email" required />
+        </div>
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <fieldset class="card__contact-method">
+          <legend class="card__contact-method-legend">Query Type *</legend>
+
+          <div>
+            <input
+              type="radio"
+              id="general"
+              name="query-type"
+              value="general"
+            />
+
+            <label for="general">General Enquiry</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="support"
+              name="query-type"
+              value="support"
+            />
+
+            <label for="support">Support Request</label>
+          </div>
+        </fieldset>
+
+        <div class="card__field">
+          <label for="message">Message *</label>
+
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="card__field-consent">
+          <input type="checkbox" id="consent" name="consent" required />
+
+          <label for="consent"
+            >I consent to being contacted by the team *</label
+          >
+        </div>
+
+        <button class="card__submit-button" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Julio Anccasi</a>.
+      </p>
+    </footer>
+  </body>
 </html>

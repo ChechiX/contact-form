@@ -1,0 +1,92 @@
+:root {
+  --grey-900: #2a4144;
+  --grey-500: #86a2a5;
+  --white: #ffffff;
+  --green-600: #0c7d69;
+  --green-200: #e0f1e8;
+  --red: #d73c3c;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+legend {
+  padding: 0;
+}
+
+body {
+  padding: 2rem 1rem;
+  background-color: var(--green-200);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.card__title {
+  margin-bottom: 2rem;
+}
+
+.card__form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__contact-method {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card__contact-method-legend {
+  margin-bottom: 1rem;
+}
+
+.card__field-consent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__submit-button {
+  background-color: var(--green-600);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
