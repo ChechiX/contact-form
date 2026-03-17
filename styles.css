@@ -69,7 +69,10 @@ body {
   background-color: var(--white);
   padding: 1.5rem;
   border-radius: 16px;
-  width: 43.125rem;
+
+  @media (width >= 48rem) {
+    width: 43.125rem;
+  }
 }
 
 .card__title {
@@ -147,9 +150,9 @@ body {
     min-height: 8.25rem;
   }
 
-  /* @media (width >= 90rem) {
+  @media (width >= 90rem) {
     min-height: 6.5625rem;
-  } */
+  }
 }
 
 .card__field-consent {
