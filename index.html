@@ -40,31 +40,44 @@
 
       <form class="card__form" id="contactForm" novalidate>
         <div class="card__field">
-          <label for="first-name"
+          <label for="firstName"
             >First Name <span class="required">*</span></label
           >
 
           <input
             class="card__field-input"
             type="text"
-            id="first-name"
+            id="firstName"
             name="firstName"
             required
+            autocomplete="name"
+            aria-invalid="false"
+            aria-describedby="first-name-error"
           />
+
+          <span class="card__field-error" id="first-name-error"
+            >This field is required</span
+          >
         </div>
 
         <div class="card__field">
-          <label for="last-name"
+          <label for="lastName"
             >Last Name <span class="required">*</span></label
           >
 
           <input
             class="card__field-input"
             type="text"
-            id="last-name"
+            id="lastName"
             name="lastName"
             required
+            autocomplete="family-name"
+            aria-invalid="false"
+            aria-describedby="last-name-error"
           />
+          <span class="card__field-error" id="last-name-error"
+            >This field is required</span
+          >
         </div>
 
         <div class="card__field card__field-email">
@@ -79,7 +92,13 @@
             name="email"
             required
             autocomplete="email"
+            aria-invalid="false"
+            aria-describedby="email-error"
           />
+
+          <span class="card__field-error" id="email-error"
+            >Please enter a valid email address</span
+          >
         </div>
 
         <fieldset class="card__contact-method">
@@ -88,7 +107,13 @@
           </legend>
 
           <div class="card__field-input">
-            <input type="radio" id="general" name="queryType" value="general" />
+            <input
+              type="radio"
+              id="general"
+              name="queryType"
+              value="general"
+              aria-invalid="false"
+            />
 
             <label class="card__field-label" for="general"
               >General Enquiry</label
@@ -99,8 +124,9 @@
             <input
               type="radio"
               id="support"
-              name="query-type"
+              name="queryType"
               value="support"
+              aria-invalid="false"
             />
 
             <label class="card__field-label" for="support"
@@ -119,7 +145,13 @@
               name="message"
               rows="5"
               required
+              aria-invalid="false"
+              aria-describedby="message-error"
             ></textarea>
+
+            <span class="card__field-error" id="message-error"
+              >This field is required</span
+            >
           </div>
 
           <div class="card__field-consent">
@@ -129,11 +161,17 @@
               id="consent"
               name="consent"
               required
+              aria-invalid="false"
+              aria-describedby="consent-error"
             />
 
             <label for="consent"
               >I consent to being contacted by the team
               <span class="required">*</span></label
+            >
+
+            <span class="card__field-error" id="consent-error"
+              >To submit this form, please consent to being contacted</span
             >
           </div>
 

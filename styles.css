@@ -158,6 +158,15 @@ body {
   color: var(--green-600);
 }
 
+.card__field-error {
+  color: var(--red);
+  display: none;
+}
+
+.card__field-error--visible {
+  display: block;
+}
+
 .card__field-input {
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -227,6 +236,7 @@ body {
 .card__field-consent {
   display: flex;
   align-items: center;
+  /* flex-wrap: wrap; */
   gap: 1rem;
 }
 
