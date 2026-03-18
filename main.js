@@ -17,8 +17,6 @@ contactForm.addEventListener('submit', (e) => {
   const { firstName, lastName, email, queryType, message, consent } =
     Object.fromEntries(new FormData(contactForm).entries());
 
-  console.log({ firstName, lastName, email, queryType, message, consent });
-
   if (firstName && lastName && email && queryType && message && consent) {
     toast.classList.add('toast--visible');
 
