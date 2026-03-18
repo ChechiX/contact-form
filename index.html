@@ -52,10 +52,10 @@
             required
             autocomplete="name"
             aria-invalid="false"
-            aria-describedby="first-name-error"
+            aria-describedby="firstNameError"
           />
 
-          <span class="card__field-error" id="first-name-error"
+          <span class="card__field-error" id="firstNameError"
             >This field is required</span
           >
         </div>
@@ -73,9 +73,9 @@
             required
             autocomplete="family-name"
             aria-invalid="false"
-            aria-describedby="last-name-error"
+            aria-describedby="lastNameError"
           />
-          <span class="card__field-error" id="last-name-error"
+          <span class="card__field-error" id="lastNameError"
             >This field is required</span
           >
         </div>
@@ -93,10 +93,10 @@
             required
             autocomplete="email"
             aria-invalid="false"
-            aria-describedby="email-error"
+            aria-describedby="emailError"
           />
 
-          <span class="card__field-error" id="email-error"
+          <span class="card__field-error" id="emailError"
             >Please enter a valid email address</span
           >
         </div>
@@ -113,6 +113,7 @@
               name="queryType"
               value="general"
               aria-invalid="false"
+              aria-describedby="queryTypeError"
             />
 
             <label class="card__field-label" for="general"
@@ -127,12 +128,17 @@
               name="queryType"
               value="support"
               aria-invalid="false"
+              aria-describedby="queryTypeError"
             />
 
             <label class="card__field-label" for="support"
               >Support Request</label
             >
           </div>
+
+          <span class="card__field-error" id="queryTypeError"
+            >Please select a query type</span
+          >
         </fieldset>
 
         <div class="card__field-textarea">
@@ -146,10 +152,10 @@
               rows="5"
               required
               aria-invalid="false"
-              aria-describedby="message-error"
+              aria-describedby="messageError"
             ></textarea>
 
-            <span class="card__field-error" id="message-error"
+            <span class="card__field-error" id="messageError"
               >This field is required</span
             >
           </div>
@@ -162,7 +168,7 @@
               name="consent"
               required
               aria-invalid="false"
-              aria-describedby="consent-error"
+              aria-describedby="consentError"
             />
 
             <label for="consent"
@@ -170,7 +176,7 @@
               <span class="required">*</span></label
             >
 
-            <span class="card__field-error" id="consent-error"
+            <span class="card__field-error" id="consentError"
               >To submit this form, please consent to being contacted</span
             >
           </div>

@@ -177,6 +177,10 @@ body {
   transition: border 0.3s ease-in-out;
 }
 
+.card__field-input--error {
+  border: 1px solid var(--red) !important;
+}
+
 .card__field-input:focus,
 .card__field-texta:focus {
   outline: 1px solid var(--green-600);
