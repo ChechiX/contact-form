@@ -165,11 +165,17 @@ body {
   display: flex;
   gap: 0.75rem;
   cursor: pointer;
+  transition: border 0.3s ease-in-out;
 }
 
 .card__field-input:focus,
 .card__field-texta:focus {
   outline: 1px solid var(--green-600);
+}
+
+.card__field-input:hover,
+.card__field-texta:hover {
+  border: 1px solid var(--green-600);
 }
 
 .card__field-input:has(input[type='radio']:checked) {
@@ -206,6 +212,8 @@ body {
   min-height: 15rem;
   border: 1px solid var(--grey-500);
   border-radius: 8px;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
 
   @media (width >= 48rem) {
     min-height: 8.25rem;
@@ -228,6 +236,7 @@ body {
   margin: 0;
   border: var(--grey-500);
   accent-color: var(--green-600);
+  cursor: pointer;
 }
 
 .card__submit-button {
@@ -238,6 +247,11 @@ body {
   color: var(--white);
   font-size: 1.125rem;
   font-family: 'Karla Bold';
+  cursor: pointer;
+}
+
+.card__submit-button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .attribution {
